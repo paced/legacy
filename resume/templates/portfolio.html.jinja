@@ -1,0 +1,238 @@
+{% extends 'base.html.jinja' %}
+{% block content %}
+
+<!-- I agonised for literally weeks on this design. In the end: usability before flashiness! -->
+<div class="text-center" style="padding-top: 1.5em">
+  <h2>Portfolio</h2>
+</div>
+<div class="container row">
+  <div class="col col-2"></div>
+  <div class="col col-8">
+
+<!-- -->
+<h3 class="text-center">Completed Software</h3>
+  <table class="striped" style="padding-bottom: 2vh">
+    <tr>
+      <td><b>Name</b></td>
+      <td><b>Stack</b></td>
+      <td><b>Blurb</b></td>
+      <td><b>Source</b></td>
+      <td><b>Link</b></td>
+      <td><b>Docs</b></td>
+    </tr>
+
+    {% for i in p.completed %}
+      <tr>
+        <td>
+          <b>{{ i.name }}</b>
+        </td>
+        <td >
+          {{ i.stack }}
+        </td>
+        <td>
+          {{ i.blurb }}
+        </td>
+        <td>
+          <a href="{{ i.source }}" target="_blank">Source</a>
+        </td>
+        <td>
+          {% if i.link %}
+            <a href="{{ i.link }}" target="_blank">Link</a>
+          {% else %}
+            N/A
+          {% endif %}
+        </td>
+        <td>
+          {% if i.docs %}
+            <a href="{{ i.docs }}" target="_blank">Docs</a>
+          {% else %}
+            N/A
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  <h3 class="text-center">Mini Projects</h3>
+  <table class="striped" style="padding-bottom: 2vh">
+    <tr>
+      <td><b>Name</b></td>
+      <td><b>Stack</b></td>
+      <td><b>Blurb</b></td>
+      <td><b>Source</b></td>
+      <td><b>Link</b></td>
+      <td><b>Docs</b></td>
+    </tr>
+
+    {% for i in p.small %}
+      <tr>
+        <td>
+          <b>{{ i.name }}</b>
+        </td>
+        <td >
+          {{ i.stack }}
+        </td>
+        <td>
+          {{ i.blurb }}
+        </td>
+        <td>
+          {% if i.source %}
+            <a href="{{ i.source }}" target="_blank">Source</a>
+          {% else %}
+            N/A
+          {% endif %}
+        </td>
+        <td>
+          {% if i.link %}
+            <a href="{{ i.link }}" target="_blank">Link</a>
+          {% else %}
+            N/A
+          {% endif %}
+        </td>
+        <td>
+        {% if i.docs %}
+          <a href="{{ i.docs }}" target="_blank">Docs</a>
+        {% else %}
+          N/A
+        {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+<h3 class="text-center">Websites</h3>
+<table class="striped" style="padding-bottom: 2vh">
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Stack</b></td>
+    <td><b>Blurb</b></td>
+    <td><b>Source</b></td>
+    <td><b>Link</b></td>
+    <td><b>Docs</b></td>
+  </tr>
+
+  {% for i in p.webdev %}
+    <tr>
+      <td>
+        <b>{{ i.name }}</b>
+      </td>
+      <td >
+        {{ i.stack }}
+      </td>
+      <td>
+        {{ i.blurb }}
+      </td>
+      <td>
+        {% if i.source %}
+          <a href="{{ i.source }}" target="_blank">Source</a>
+        {% else %}
+          Private
+        {% endif %}
+      </td>
+      <td>
+        <a href="{{ i.link }}" target="_blank">Link</a>
+      </td>
+      <td>
+      {% if i.docs%}
+        <a href="{{ i.docs }}" target="_blank">Docs</a>
+      {% else %}
+        N/A
+      {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h3 class="text-center">Ongoing Projects</h3>
+<table class="striped" style="padding-bottom: 2vh">
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Stack</b></td>
+    <td><b>Blurb</b></td>
+    <td><b>Source</b></td>
+    <td><b>Link</b></td>
+    <td><b>Docs</b></td>
+  </tr>
+
+  {% for i in p.ongoing %}
+    <tr>
+      <td>
+        <b>{{ i.name }}</b>
+      </td>
+      <td >
+        {{ i.stack }}
+      </td>
+      <td>
+        {{ i.blurb }}
+      </td>
+      <td>
+        {% if i.source %}
+          <a href="{{ i.source }}" target="_blank">Source</a>
+        {% else %}
+          N/A
+        {% endif %}
+      </td>
+      <td>
+        {% if i.link %}
+          <a href="{{ i.link }}" target="_blank">Link</a>
+        {% else %}
+          N/A
+        {% endif %}
+      </td>
+      <td>
+      {% if i.docs %}
+        <a href="{{ i.docs }}" target="_blank">Docs</a>
+      {% else %}
+        N/A
+      {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h3 class="text-center">Competitions</h3>
+<p class="small text-center">(Non-hackathon)</p>
+<table class="striped" style="padding-bottom: 2vh">
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Period</b></td>
+    <td><b>Seed</b></td>
+    <td><b>Comments</b></td>
+  </tr>
+
+  {% for i in p.competitions %}
+    <tr>
+      <td>
+        <b>{{ i.name }}</b>
+      </td>
+      <td>
+        {{ i.period }}
+      </td>
+      <td>
+        {{ i.place }}
+      </td>
+      <td>
+        {{ i.comments }}
+      </td>
+  {% endfor %}
+</table>
+
+<h3 class="text-center">Writing</h3>
+  {% for i in p.writing %}
+    <p class="text-center" style="margin: 5px"><b>{{ i.name }}</b></p>
+    <p class="small text-center">{{ i.authors }}</p>
+    <p class="text-center">
+
+      {% set writingURL = url_for('static', filename=i.full.rstrip()) %}
+
+    <button class="button round outline"
+            onclick="window.open('{{ writingURL }}')">Full piece (PDF)</button>
+    </p>
+    <hr style="margin-bottom: 3.5vh"/>
+  {% endfor %}
+
+<div class="clear" style="padding-bottom: 4vh"></div>
+  </div>
+</div>
+
+{% endblock %}

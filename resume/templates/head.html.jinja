@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8">
+
+    <title>paced{{ext}}</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='favicons/favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='favicons/favicon-16x16.png') }}" sizes="16x16">
+    <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='favicons/favicon-32x32.png') }}">
+    <link rel="icon"
+          href="{{ url_for('static', filename='favicons/favicon.ico') }}"
+          type="image/x-icon">
+    <link rel="shortcut icon"
+          href="{{ url_for('static', filename='favicons/favicon.ico') }}"
+          type="image/x-icon">
+
+    {% include 'meta.html.jinja' %}
+
+    {{ compressor('allCSS', inline=False) }}
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+</head>

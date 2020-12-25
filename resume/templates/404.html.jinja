@@ -1,0 +1,19 @@
+{% extends 'base.html.jinja' %}
+{% block content %}
+
+<div class="text-center">
+  <img src="{{ url_for('static', filename='images/404.png') }}"
+       style="padding-top: 9vh; max-width: 20vh"/>
+  <h2>404</h2>
+  <h3 class="type-text"></h3>
+</div>
+
+{% endblock %}
+
+{% block extrascripts %}
+
+<script>
+  $(function(){$(".type-text").teletype({text:["Not found."],typeDelay:80,backDelay:40,blinkSpeed:1e3,humanise:!1,loop:1,preserve:!0})});
+</script>
+
+{% endblock %}

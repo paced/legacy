@@ -1,0 +1,63 @@
+brief: >
+  I strive to build creative, innovative solutions to complex engineering problems by collaborating as a leader and mentor to all peers. I am passionate about information security, state security, privacy, and human-computer-interaction.
+jobs:
+  -
+    position: Software Engineer
+    with: Thales Australia
+    in: Melbourne
+    period: February 2018 to current
+    description: >
+      I work as a Graduate Software Engineer in the Air Traffic Management (ATM) branch of Thales Group Australia in Melbourne.
+  -
+    position: Web Developer
+    with: Freelance
+    in: Melbourne
+    period: Late 2016 to Late 2017
+    description: >
+      Developed personal websites for university students, groups of volunteers, and small businesses. Wherever envolved, I chose, designed, secured, and maintained all parts of the stack from database to frontend design.
+  -
+    position: iOS Development Tutor
+    with: Life is Tech
+    in: Melbourne
+    period: 11/2015 to 9/2016
+    description: >
+      Tutored first time programmers. Covered iPhone app development using Swift 2.3 in the XCode IDE. Tutoring covered up to advanced object oriented game programming. Mentorship ensured part of the success of the Australian branch of company operations abroad.
+  -
+    position: Data Entry
+    with: Recycled Textbooks
+    in: Mont Albert
+    period: 8/2015 to 11/2015
+    description: >
+      Facilitated data entry into a Django/MySQL database of textbooks. Required high accuracy, high speed, and familiarity with a particular web frontend. Also helped with stocking shelves and operating an online marketplace.
+  -
+    position: Head Admin
+    with: Ready Steady Pan Team
+    in: Worldwide
+    period: Spring 2013
+    description: >
+      Managed over 2000 people and 260 teams in a competitive video game tournament around North America, Australia, and Europe. Performed PR, administrative, and technical duties. Managed other administrators, players and staff. Worked in liaison with Valve and professional casters to advertise and ensure the success of the tournament.
+  -
+    position: Events Management
+    with: Freeza Stonnington
+    in: Prahran
+    period: 4/2012 to 8/2015 (non-continuously)
+    description: >
+      Volunteer position. Worked alongside city council employees to promote and organise music events for young people in the Stonnington area.
+
+events:
+  -
+    name: Codebrew 2016
+    description: >
+      Hackathon event with a "food" theme. Here, five others and I worked overnight on a pantry app designed to formulate recipes and ingredients based on dietary requirements for the user.
+  -
+    name: Unihack 2016
+    description: >
+      Hackathon event with no theme. Four team members and I set out to develop a metro Home Drawer-like New Tab Chrome extension in ReactJS with several widget suites. The project won Most Marketable App and Best Unit Testing. Please see the Projects tab for the source GitHub organisation.
+  -
+    name: Victoria Collegiate Programming Contest 2016
+    description: >
+      19th Place. Competitive programming event held over the course of a day. Given that this was my first exposure to competitive programming, my first exposure to competitive programming. There were 36 total teams.
+  -
+    name: Codebrew 2017
+    description: >
+      Hackathon event with a theme on "the connected world." Here, five of us developed an Android app aimed at delivering messages to strangers on the other side of the world. My work involved instatiating a database and creating a memory-efficient algorithm with heuristic for determining photos in a "message digest." More information and the source is located on the Projects tab.

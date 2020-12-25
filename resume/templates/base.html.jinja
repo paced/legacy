@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html.jinja' %}
+{% block tags %}
+{% endblock %}
+
+<body>
+  <div class="container wrapper">
+    {% include 'nav.html.jinja' %}
+
+    {% block content %}
+    {% endblock %}
+  </div>
+  {% include 'footer.html.jinja' %}
+
+  {{ compressor('allJS', inline=False) }}
+
+  <script>
+  $(function() {
+    $(document).ready(function() {
+      $("#{{ active }}").addClass("active");
+    })
+  });
+  </script>
+  {% block extrascripts %}
+  {% endblock %}
+</body>
+</html>

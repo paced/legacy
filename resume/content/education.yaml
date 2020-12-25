@@ -1,0 +1,33 @@
+history:
+  -
+    institution: University of Melbourne
+    degree: B.S.
+    major: Computing and Software Systems
+    duration: 7/2015 to 10/2017
+    description: >
+      This major is part of the Engineering Systems group of Science concentrations. I have been given many exciting challenges through both coursework and extracurricular projects. Relevant coursework includes Algorithms and Data Structures, Software Modelling and Design, Information Security and Privacy, and Computer Systems to name a few.
+    notes:
+      - Co-founder and 2017 President of the Melbourne University Infosec Club.
+      - Active in the CISSA students society.
+      - Regular hackathon participant; see Projects tab for awards.
+      - Associated with the Competitive Programming Club.
+  -
+    institution: Ward Melville High School
+    degree: "High School"
+    major: ""
+    duration: 9/2012 to 8/2015
+    description: >
+      After moving to the United States I grew even more involved with programming and computers. I also gained an interest in maths and research. It was here I first started to grow more ambitious in the scope of my ideas.
+    notes:
+      - Part of the research-based InSTAR program.
+      - Active in the Tri-M Music Honours Society.
+      - Very active in the Cinnabar Literary Society.
+      - Participant in the Computer Science Club.
+      - Leader and a guitarist of an extracurricular rock band.
+  -
+    institution: Melbourne High School
+    degree: "High School"
+    major: ""
+    duration: 2/2011 to 7/2012
+    description: >
+      Melbourne High School is a selective-entry all-boys state high school in South Yarra, Victoria, Australia. Here I first dabbled in programming and software development with elective subjects where I gathered a great interest in computing and web development.

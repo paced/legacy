@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+Flask = ">=0.12"
+"flask-htmlmin" = ">=1.2"
+"flask-compressor" = ">=0.2.0"
+uWSGI = ">=2.0.14"
+cssmin = ">=0.2.0"
+jsmin = ">=2.2.1"
+pyyaml = ">=3.12"
+"flask-cache" = "*"
+
+
+[dev-packages]
+
+[requires]
+python_version = "3"

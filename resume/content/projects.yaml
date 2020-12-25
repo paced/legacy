@@ -1,0 +1,201 @@
+# Projects grid that expands upon clicking with more details about the project.
+# Project items are specified with certain links which may have different
+# types (repository, live, etc). Certain characteristics may be involved, such
+# as venue or purpose (hackathon etc).
+
+writing:
+  - name: >
+      Biofabrication of the human pancreas for the treatment of Diabetes mellitus
+    abstract: >
+      Diabetes mellitus (Type 1 Diabetes or T1D) is an autoimmune disease that results in the destruction of the insulin-producing beta cells of the pancreas. Decreased levels of insulin in the blood topple homeostatic balances established by negative feedback, preventing the conversion of monosaccharides in the blood to polysaccharides in cells. Current treatment of T1D requires calculated, sporadic injections of insulin, a temporary treatment at best. A more permanent treatment for T1D requires a pancreas transplant, subject to organ rejection and medical unavailability. New technologies allow for the construction of certain simple tissues in a method known as bioprinting. We propose to use the newly developing processes of organ bioprinting from a patient’s own monopotent stem cells to “print” an artificial pancreas which will utilise cell encapsulation to affect the permeability of the pancreas to cytotoxic T-cells, and produce biologically compatible beta cells unaffected by autoimmune targeting.
+    authors: >
+      Ryan Fan, Tian Hao Wang, Cyrus Rastegar, Sander Zhu
+    full: >
+      pdf/biofabPaper01.pdf
+  - name: >
+      Use of acoustic and electric guitars on Radiohead's OK Computer and Hail to the Thief
+    abstract: >
+      Radiohead has historically (during the 1990s to 2010s) been known as a band known for exploring experimental styles in the heavy alternative soundscape. From the band’s initial debut sound in Pablo Honey - grungy, derivative alternative rock - to the explorative, atmospheric sounds in In Rainbows, it is clear that the band has undergone major transformations over time. Much of Radiohead’s success can be attributed to how the guitar is utilised as a textural and expressive instrument. This is greatly due to the talent of lead guitarist Jonny Greenwood (b. 1971), who, alongside singer Thom Yorke (b. 1968), contributed to two of the most influential records in rock history known as OK Computer, and Hail to the Thief.
+    authors: >
+      Tian Hao Wang
+    full: >
+      pdf/radioheadPaper01.pdf
+  - name: >
+      Positive Psychology Interventions and the Effects of Loving Kindness Meditation
+    abstract: >
+      Positive Psychology (PP) is a research field that greatly benefits from its applicability. Research findings present actionable answers for practitioners of psychiatry that are empirically validated in the form of Positive Psychology Interventions (PPI; Sin & Lyubomirsky, 2009, p. 468). To begin, a Psychology Intervention (PI) is, defined by Ballou (1995), designed to bring general change to people, usually cognitive and emotional state. PIs have traditionally been used to treat mental disorders such as depression and alcohol dependence.
+    authors: >
+      Tian Hao Wang
+    full: >
+      pdf/ppiPaper01.pdf
+
+small:
+  -
+    name: TOTP Generator
+    stack: Python, Flask
+    blurb: >
+      Demonstration of Timed One-Time Password on a web app.
+    description: >
+      Shouldn't be able to see this.
+    link: https://warm-tundra-47817.herokuapp.com/
+    docs: ""
+    source: https://github.com/paced/totpdemo
+  -
+    name: Bind Rotation Generator
+    stack: JavaScript
+    blurb: >
+      Short joke project that processes text into configs.
+    description: >
+      This is a short JavaScript based web application that operates completely on the client side. It is specifically meant as a joke or a fun project.  It takes a string input (a "copypasta") and translates it into command "binds" and aliases that can be used in videogames in the Source engine as .cfg files. This allows easy "say commands" in servers that allow custom configs.
+    link: https://paced.github.io/Bind-Rotation-Generator/
+    docs: ""
+    source: https://github.com/paced/Bind-Rotation-Generator
+  -
+    name: 2DArrayGUI
+    stack: JavaScript
+    blurb: >
+      Simple web GUI for 2D array visualisation and output.
+    description: >
+      High school kids and some programmers with little knowledge of matrices have difficulty visualising 2D arrays. I designed this little app for young programmers to better understand and create 2D arrays in Swift for a job for LifeIsTech! Japan. It is a simple clientside app written in pure JavaScript.
+    link: https://paced.github.io/2DArrayGUI/
+    docs: ""
+    source: https://github.com/paced/2DArrayGUI
+
+completed:
+  -
+    name: woof
+    stack: Unity 2017, C#, NodeJS, MongoDB
+    blurb: >
+      At Unihack Melbourne 2017, Team Woof decided to tackle a problem in the field of social entrepreneurship by developing an Augmented Reality, Machine Learning-based artificial pet. Voice recognition and natural language processing, alongside data analysis were planned as value proposition for an audience that may suffer from depressive symptoms, especially from lack of mobility. This app demonstrated my team's ability to adapt to a completely unfamiliar solution stack in a matter of hours to solve a non-trivial problem.
+    description: >
+      If you can read this, message me to fix it.
+    link: https://github.com/woofie
+    docs: ""
+    source: https://github.com/woofie
+  -
+    name: YadaYada
+    stack: Django, REST-Framework, Framework7
+    blurb: >
+      Made for the very first Catalyst Social Entrepreneurship challenge in 2017. YadaYada is a voice-based social application intended to help people "speak out." It leverages third party neural networks and natural language processing APIs. We demonstrated the potential role of technology in providing positive feedback as a preventative measure to mental illness in youths aged 20 to 24 in the rural Mornington Peninsula.
+    description: >
+      If you can read this, message me to fix it.
+    link: https://github.com/equilibrium-catalyst
+    docs: ""
+    source: https://github.com/equilibrium-catalyst
+  -
+    name: beThere
+    stack: Flask, MySQL, Framework7
+    blurb: >
+      A geo-social mobile and web application for immersive and usable experiences at festivals and events. Deployed with Apache Cordova to mobile devices. <b>Tied 3rd place at the first Facebook Hackathon in Melbourne!</b>
+    description: >
+      If you can read this, message me to fix it.
+    link: https://github.com/FBTimNim/beThere-mobile
+    docs: ""
+    source: https://github.com/FBTimNim/
+  -
+    name: Across
+    stack: React-Native, Flask, MySQL
+    blurb: >
+      Global connectivity-focused photo-sharing Android app. Entry in Codebrew 2017.
+    description: >
+      This is a hackathon project for Codebrew 2017. aCross is a phone app designed to solve the problem of global connectivity. It allows users to take photos of their surroundings or their locations and generate "stories" to share around the world. Stories are generated based on a heuristic that tries to maximise the distance around the world with unique photos on each visit.
+    link: ""
+    docs: ""
+    source: https://github.com/XantLabs
+  -
+    name: pipette
+    stack: Flask, SQLite
+    blurb: >
+      Private self-hosted file sharing Python API.
+    description: >
+      Image/file hosts exist that allow users to share images and files across the internet. Imgur is probably the best example. However, even in recent days, these services often go down and are unreliable. We can always rely on our own servers (if we have them) and may want to instead host these services ourselves. pipette gives a very easy user-friendly method of creating a file host with diagnostics and extensible code.
+    link: https://github.com/paced/pipette
+    docs: https://paced.me/blog/pipette-documentation/
+    source: https://github.com/paced/pipette
+  -
+    name: Dashr
+    stack: ReactJS
+    blurb: >
+      Productivity Chrome extension New Tab replacement. <b>Won Most Marketable Hack and Best Unit Testing at Unihack 2016.</b>
+    description: >
+      This is a hackathon project for Unihack 2016. Dashr won Most Marketable Hack and Best Unit Testing. It is a Chrome extension that replaces the New Tab page in a way that is friendly to modders/developers, has a very low performance overhead, and is user-friendly and modern. Based on the Metro design first present in Windows 8 and Windows Phone, this extension uses square resizeable grids to launch lightning-fast widgets such as weather and email on each new tab.
+    link: ""
+    docs: ""
+    source: https://github.com/dashrlabs
+
+webdev:
+    -
+      name: UP Media Pty Ltd
+      stack: Flask
+      blurb: >
+        Simple theme-based business frontend portfolio for a media company.
+      description: >
+        Should not be able to see this.
+      link: http://up-media.com.au/
+      docs: ""
+      source: ""
+    -
+      name: Ready Steady Pan
+      stack: Ruby on Rails
+      blurb: >
+        Large-scale database-driven full-stack project for a Swiss-style tournament. Three-person team.
+      description: >
+        Large-scale project. This is the web client for a multinational videogame tournament, Ready Steady Pan. It is the method of communication between over 2000 registered individuals. I help design, implement, maintain, secure, and test the site as part of a three-man developer team with focus on SEO and security in order to present legitimacy to sponsors such as Valve.
+      link: https://pan.tf
+      docs: ""
+      source: ""
+    -
+      name: Tianhao Wang
+      stack: Flask
+      blurb: My personal home page (that you are currently visiting).
+      description: >
+        This is the site you're looking at! It was built in KubeCSS and JavaScript/jQuery, and is a pretty standard static (technically dynamic) web page. I designed a system of managing content using .yaml markup files to update served information combined with the Jinja2 templating format to serve modular, changing personal content.
+      link: https://paced.me
+      docs: ""
+      source: ""
+    -
+      name: Hannah Yen
+      stack: Flask
+      blurb: >
+        A client's personal home page with a photo portfolio. No longer available, client switched to Squarespace.
+      description: >
+        Hannah is a UI/UX student in the Bachelor of Informatics at the University of Michigan who commissioned my work to design a personal web page and provide a personal email server. I act as an agent to this website and am responsible for all tasks, including hosting it on my node and website design. Content is edited and provided at Hannah's volition.
+      link: https://hannahyen.com
+      docs: ""
+      source: ""
+
+ongoing:
+  -
+    name: runoff
+    stack: Django
+    blurb: >
+      Transferrable vote (instant runoff) based instant poll creator.
+    description: >
+      First-past-the-post (FPTP) voting. The debate of how useful it is in politics is long drawn and greatly in favour of other representational systems such as Instant Runoff, the voting system in place in Australia. But there is little debate over the usefulness of it in polls and surveys. Runoff is an alternative to Strawpoll and the like that leverages Instant Runoff voting cycles instead of FPTP, with social authentication, variable start and end times, and breakdown of votes.
+    link: ""
+    docs: ""
+    source: ""
+  -
+    name: LazyBudget
+    stack: Django
+    blurb: >
+      Personal finance app aimed at college students to manage their first incomes.
+    description: >
+      College students are often lost when it comes to managing their incomes. It is easy for some to stay above some imaginary line but it often means living opulently for one week while starving for the next until payday. Because of student loans and small incomes, this app hopes to help students in reaching their savings goals by scheduling how much money one can spend over a certain period of time using a "financial calendar."
+    link: ""
+    docs: ""
+    source: ""
+
+competitions:
+  -
+    name: Cyber Security Challenge Australia
+    period: 2017
+    place: 21st
+    comments: >
+      I was the captain of team UoM1 and, along with my colleague Sarah Pham, organised the University of Melbourne's first attempt at this challenge. I also taught many of the participants as we did not have a mentor. There were 79 teams.
+  -
+    name: Victoria Collegiate Programming Contest
+    period: 2016
+    place: 19th
+    comments: >
+      Given that this was our first exposure to competitive programming, I feel we did reasonably well. There were 36 total teams.

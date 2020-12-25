@@ -1,0 +1,101 @@
+{% extends 'base.html.jinja' %}
+{% block content %}
+
+<div id="cv">
+	<div class="mainDetails">
+		<div id="headshot">
+			<img src="/static/images/profile.jpg" alt="Tianhao Wang" />
+		</div>
+		<a href="{{url_for('static', filename='pdf/resume2017.pdf')}}" target="_blank" class="resumePdf"><i class="fa-file-text fa fa-2x"></i></a>
+
+		<div id="name">
+			<h1>Tian Hao Wang</h1>
+			<h2>Graduate Software Engineer</h2>
+			<a href="{{url_for('static', filename='pdf/resume2017.pdf')}}" target="_blank" class="resumeBelow"><i class="fa-file-text fa"></i> Download as PDF.</a>
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="mainArea">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Summary</h1>
+				</div>
+
+				<div class="sectionContent">
+					<p>{{ exp.brief }}</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Experience</h1>
+			</div>
+
+			<div class="sectionContent">
+				<div id="experienceContent" class="experienceCollapse">
+	        {% for i in exp.jobs %}
+					<article>
+						<h2>{{ i["position"]}} at {{ i["with"]}}</h2>
+						<p class="subDetails">{{ i["period"]}}</p>
+						<p>{{ i["description"]}}</p>
+					</article>
+	        {% endfor %}
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<div id="educationContent">
+        {% for i in edu.history %}
+					<article>
+						<h2>{{ i['degree'] }} {{i['major'] }}</h2>
+						<p class="subDetails">{{ i['institution'] }} (from {{
+	i['duration'] }})</p>
+						<p>{{ i['description'] }}</p>
+	          <ul style='padding-left: 4vh'>
+	            {% for j in i['notes'] %}
+	            <li><small>{{ j }}</small></li>
+	            {% endfor %}
+	          </ul>
+					</article>
+	        {% endfor %}
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+</div>
+
+{% endblock %}
+{% block extrascripts %}
+
+<script>
+	$("#experienceContent").readmore({
+		collapsedHeight: 650,
+		speed: 250,
+		blockcss: 'display: block; width: 100%; margin-bottom: 1em; margin-top: 1em'
+	});
+
+	$("#educationContent").readmore({
+		collapsedHeight: 330,
+		speed: 250,
+		blockcss: 'display: block; width: 100%; margin-bottom: 1em; margin-top: 1em'
+	});
+</script>
+
+{% endblock %}

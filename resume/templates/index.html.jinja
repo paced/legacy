@@ -1,0 +1,42 @@
+{% extends 'base.html.jinja' %}
+{% block content %}
+
+<div class="text-center">
+  <img src="{{ url_for('static', filename='images/hexagons.png') }}"
+       style="padding-top: 9vh; width: 100%; max-width: 20vh"/>
+  <h2>Tianhao Wang</h2>
+  <h3 class="type-text nopush"></h3>
+</div>
+<div class="row" style="padding-top: 20vh; padding-bottom: 15vh;">
+    <div class="col col-3"></div>
+    <div class="col col-6 text-center">
+      <p class="text-center">
+        Look me up!
+      </p>
+      <div class="links">
+        <a href="mailto:dev@paced.me" target="_blank" class="nodec">
+          <i class="fa fa-2x fa-paper-plane-o"></i>
+        </a>
+        <a href="https://www.facebook.com/tianhao.wang.2"
+           target="_blank" class="nodec">
+          <i class="fa fa-2x fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tianhao-wang-691330101/"
+           target="_blank" class="nodec">
+          <i class="fa fa-2x fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/paced" class="nodec">
+          <i class="fa fa-2x fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col col-3"></div>
+</div>
+
+{% endblock %}
+
+{% block extrascripts %}
+<script>
+  $(function(){$(".type-text").teletype({text:[" Software Engineer.","n Information Security enthusiast."," developer."],typeDelay:100,backDelay:50,blinkSpeed:1e3,humanise:!1,prefix:"I am a"})});
+</script>
+{% endblock %}
