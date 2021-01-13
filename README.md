@@ -2,6 +2,11 @@
 
 Source for my personal website.
 
+![](screenshots/index.png)
+![](screenshots/cv.png)
+![](screenshots/portfolio.png)
+![](screenshots/contact.png)
+
 ## Requirements
 
 - Python 2
@@ -11,8 +16,6 @@ Source for my personal website.
 ## Usage
 
 ```sh
-$ git clone https://github.com/paced/paced.me
-$ cd paced.me
 $ pip install -r requirements.txt
 $ cd resume
 ```

@@ -7,7 +7,7 @@ from flask import redirect, render_template, send_from_directory
 from utils import launchServer
 
 # Necessary settings
-DEBUG = False
+DEBUG = True
 CSSFILES = [
     "css/kube.css",
     "css/font-awesome.css",
@@ -26,21 +26,21 @@ app = launchServer(DEBUG, CSSFILES, JSFILES)
 
 # Configured content objects:
 
-identityStream = file(os.path.join(app.root_path,
+identityStream = open(os.path.join(app.root_path,
                                    'content/identity.yaml'), 'r')
-identity = yaml.load(identityStream)
+identity = yaml.safe_load(identityStream)
 
-educationStream = file(os.path.join(app.root_path,
+educationStream = open(os.path.join(app.root_path,
                                     'content/education.yaml'), 'r')
-education = yaml.load(educationStream)
+education = yaml.safe_load(educationStream)
 
-experienceStream = file(os.path.join(app.root_path,
+experienceStream = open(os.path.join(app.root_path,
                                      'content/experience.yaml'), 'r')
-experience = yaml.load(experienceStream)
+experience = yaml.safe_load(experienceStream)
 
-projectsStream = file(os.path.join(app.root_path,
+projectsStream = open(os.path.join(app.root_path,
                                    'content/projects.yaml'), 'r')
-projects = yaml.load(projectsStream)
+projects = yaml.safe_load(projectsStream)
 
 
 @app.context_processor
