@@ -9,9 +9,9 @@ Source for my personal website.
 
 ## Requirements
 
-- Python 2
+- Python 3.9
 - python-pip
-- memcached
+- memcached (TODO: remove reliance)
 
 ## Usage
 
@@ -19,3 +19,7 @@ Source for my personal website.
 $ pip install -r requirements.txt
 $ cd resume
 ```
+
+## TODO
+
+The biggest TODO is to make the site static. No need for it to have a server at all.
